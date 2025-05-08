@@ -1,0 +1,164 @@
+{ 
+  "vpc-provider:account=203616038615:filter.tag:name=prod_vpc_live2_eu-west-2:region=eu-west-2:returnAsymmetricSubnets=true": { 
+    "vpcId": "vpc-0bf51e1774f3e626b", 
+    "vpcCidrBlock": "10.10.0.0/16", 
+    "availabilityZones": [], 
+    "subnetGroups": [ 
+      { 
+        "name": "Isolated", 
+        "type": "Isolated", 
+        "subnets": [ 
+          { 
+            "subnetId": "subnet-0b5136ade0b91a392", 
+            "cidr": "10.10.40.0/28", 
+            "availabilityZone": "eu-west-2a", 
+            "routeTableId": "rtb-05aff06aa8a4c1fb3" 
+          }, 
+          { 
+            "subnetId": "subnet-0405751a21229cf36", 
+            "cidr": "10.10.40.16/28", 
+            "availabilityZone": "eu-west-2b", 
+            "routeTableId": "rtb-05aff06aa8a4c1fb3" 
+          } 
+        ] 
+      }, 
+      { 
+        "name": "Public", 
+        "type": "Public", 
+        "subnets": [ 
+          { 
+            "subnetId": "subnet-07bf9de3b910b1bb1", 
+            "cidr": "10.10.1.0/24", 
+            "availabilityZone": "eu-west-2a", 
+            "routeTableId": "rtb-0af5a9c50c7f410f3" 
+          } 
+        ] 
+      } 
+    ] 
+  }, 
+  "vpc-provider:account=203616038615:filter.tag:name=staging_vpc_us-west-2:region=us-west-2:returnAsymmetricSubnets=true": { 
+    "vpcId": "INPUT_REQUIRED {Specify the staging VPC ID}", 
+    "vpcCidrBlock": "INPUT_REQUIRED {Specify the staging VPC CIDR Block}", 
+    "availabilityZones": [], 
+    "subnetGroups": [] 
+  }, 
+  "vpc-provider:account=203616038615:filter.tag:name=production_vpc_us-west-2:region=us-west-2:returnAsymmetricSubnets=true": { 
+    "vpcId": "INPUT_REQUIRED {Specify the production VPC ID}", 
+    "vpcCidrBlock": "INPUT_REQUIRED {Specify the production VPC CIDR Block}", 
+    "availabilityZones": [], 
+    "subnetGroups": [] 
+  }, 
+  "vpc-provider:account=203616038615:filter.tag:name=data_platform_vpc_us-west-2:region=us-west-2:returnAsymmetricSubnets=true": { 
+    "vpcId": "INPUT_REQUIRED {Specify the data platform VPC ID}", 
+    "vpcCidrBlock": "INPUT_REQUIRED {Specify the data platform VPC CIDR Block}", 
+    "availabilityZones": [], 
+    "subnetGroups": [] 
+  }, 
+  "key-provider:account=203616038615:aliasName=alias/prod/Live2InternalData/eu-west-2:region=eu-west-2": { 
+    "keyId": "8143198c-bfee-43ee-9621-095cd129bce6" 
+  }, 
+  "key-provider:account=203616038615:aliasName=alias/prod/Live2CustomerData/eu-west-2:region=eu-west-2": { 
+    "keyId": "68650925-9e9b-4ddf-9066-f87ae2cb36de" 
+  }, 
+  "security-group:account=203616038615:region=eu-west-2:securityGroupName=RDS Bastion Instance Security Group:vpcId=vpc-0bf51e1774f3e626b": { 
+    "securityGroupId": "sg-052bf74a57d6aafa7", 
+    "allowAllOutbound": false 
+  }, 
+  "vpc-provider:account=203616038615:filter.tag:name=prod_vpc_live2_ap-southeast-2:region=ap-southeast-2:returnAsymmetricSubnets=true": { 
+    "vpcId": "vpc-01a2e16388fdf8196", 
+    "vpcCidrBlock": "10.20.0.0/16", 
+    "availabilityZones": [], 
+    "subnetGroups": [ 
+      { 
+        "name": "Private", 
+        "type": "Private", 
+        "subnets": [ 
+          { 
+            "subnetId": "subnet-0051936175c3ae1a7", 
+            "cidr": "10.20.13.0/24", 
+            "availabilityZone": "ap-southeast-2c", 
+            "routeTableId": "rtb-0d25f88f1504a4192" 
+          }, 
+          { 
+            "subnetId": "subnet-058f14018925ed0cb", 
+            "cidr": "10.20.14.0/24", 
+            "availabilityZone": "ap-southeast-2c", 
+            "routeTableId": "rtb-0db85adce8d135d54" 
+          }, 
+          { 
+            "subnetId": "subnet-06a18834361ac958f", 
+            "cidr": "10.20.10.0/24", 
+            "availabilityZone": "ap-southeast-2c", 
+            "routeTableId": "rtb-0243d26aefa3912bb" 
+          } 
+        ] 
+      }, 
+      { 
+        "name": "Isolated", 
+        "type": "Isolated", 
+        "subnets": [ 
+          { 
+            "subnetId": "subnet-05ae898897f08b22b", 
+            "cidr": "10.20.1.0/24", 
+            "availabilityZone": "ap-southeast-2a", 
+            "routeTableId": "rtb-0b011585b2c4e56d4" 
+          }, 
+          { 
+            "subnetId": "subnet-077917d401a84d998", 
+            "cidr": "10.20.16.0/24", 
+            "availabilityZone": "ap-southeast-2b", 
+            "routeTableId": "rtb-0dafca23728b6d2cd" 
+          }, 
+          { 
+            "subnetId": "subnet-08f60752a4d17d369", 
+            "cidr": "10.20.15.0/24", 
+            "availabilityZone": "ap-southeast-2c", 
+            "routeTableId": "rtb-0503dd642a7579512" 
+          }, 
+          { 
+            "subnetId": "subnet-03fc13a1016e77550", 
+            "cidr": "10.20.17.0/24", 
+            "availabilityZone": "ap-southeast-2c", 
+            "routeTableId": "rtb-0f6611fa7112fbcca" 
+          } 
+        ] 
+      }, 
+      { 
+        "name": "Public", 
+        "type": "Public", 
+        "subnets": [ 
+          { 
+            "subnetId": "subnet-013e41c8452d77290", 
+            "cidr": "10.20.2.0/24", 
+            "availabilityZone": "ap-southeast-2a", 
+            "routeTableId": "rtb-0d4d5aef5c4e7f77d" 
+          } 
+        ] 
+      } 
+    ] 
+  }, 
+  "key-provider:account=203616038615:aliasName=alias/prod/Live2InternalData/ap-southeast-2:region=ap-southeast-2": { 
+    "keyId": "ad506cc2-bbd3-49ab-a255-aa7eb465164a" 
+  }, 
+  "key-provider:account=203616038615:aliasName=alias/prod/Live2CustomerData/ap-southeast-2:region=ap-southeast-2": { 
+    "keyId": "b29f1a37-5d08-41fb-8609-f6193c0079b6" 
+  }, 
+  "security-group:account=203616038615:region=ap-southeast-2:securityGroupName=RDS Bastion Instance Security Group:vpcId=vpc-01a2e16388fdf8196": { 
+    "securityGroupId": "sg-020f42a47eec5cd93", 
+    "allowAllOutbound": false 
+  }, 
+  "terraform-workspaces:workspaces": [ 
+    { 
+      "name": "staging", 
+      "description": "Workspace configuration for staging environment" 
+    }, 
+    { 
+      "name": "production", 
+      "description": "Workspace configuration for production environment" 
+    }, 
+    { 
+      "name": "data-platform", 
+      "description": "Workspace configuration for data platform environment" 
+    } 
+  ] 
+}

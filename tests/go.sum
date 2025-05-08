@@ -1,0 +1,8 @@
+github.com/gruntwork-io/terratest/v3 v3.7.0 h1:KQoOEv1tfisT1B9XfjsBbrUzoWGnYM0AS9CiSloF4Vo= 
+github.com/gruntwork-io/terratest/v3 v3.7.0/go.mod h1:NDS9CzGRACDIBcKsi/QAWcA7cl+g57kHRFuusqIThDs= 
+github.com/davecgh/go-spew v1.1.1 h1:Pp8WEUjoTeS+n881+S0ffHczSUXklDP8xxtA6ynS894= 
+github.com/davecgh/go-spew v1.1.1/go.mod h1:L2RVOBL3LRYx7a38gE+bmS/KmcX7FYBRU/PEpTuDCEg= 
+github.com/stretchr/testify v1.8.0 h1:/TysuSscgBVxWQHKzZTfPFNm04A1XK3wUbPLQs91Eaw= 
+github.com/stretchr/testify v1.8.0/go.mod h1:6PJeX0fbgWERwx5RMtrcaf3Mg+ocX3ldri1wXfnqpB4= 
+github.com/gruntwork-io/go-commons v0.8.2 h1:1gCE/mx8R0FtmRlcFJz/JPDFXkn+YLBLo/l1TwKvVh0= 
+github.com/gruntwork-io/go-commons v0.8.2/go.mod h1:UolYzjoWk+Dk5Ivx3BFQvLrE+IbsHwit8cRvg5bsQfI= 

@@ -1,0 +1,16 @@
+{ 
+  "name": "management", 
+  "version": "1.0.0", 
+  "description": "Service refactoring assistant project", 
+  "main": "index.js", 
+  "scripts": { 
+    "test": "jest" 
+  }, 
+  "dependencies": {}, 
+  "devDependencies": { 
+    "jest": "^29.0.0", 
+    "@types/jest": "^29.0.0", 
+    "fs": "^0.0.1-security", 
+    "@types/fs": "^0.0.45" 
+  } 
+} 

@@ -1,0 +1,30 @@
+{ 
+  "name": "base", 
+  "version": "0.1.0", 
+  "bin": { 
+    "base": "bin/base.js" 
+  }, 
+  "scripts": { 
+    "build": "tsc", 
+    "watch": "tsc -w", 
+    "test": "jest", 
+    "terraform-init": "terraform init && echo 'Terraform initialization completed'", 
+    "terraform-validate": "terraform validate && echo 'Terraform validation successful'", 
+    "terraform-plan": "terraform plan -var-file=terraform/environments/dev.tfvars && echo 'Terraform plan generated'", 
+    "terraform-apply": "terraform apply -var-file=terraform/environments/dev.tfvars && echo 'Terraform changes applied'" 
+  }, 
+  "devDependencies": { 
+    "@types/jest": "^27.5.2", 
+    "@types/node": "10.17.27", 
+    "@types/prettier": "2.6.0", 
+    "jest": "^27.5.1", 
+    "ts-jest": "^27.1.4", 
+    "aws-cdk": "2.70.0", 
+    "ts-node": "^10.9.1", 
+    "typescript": "~3.9.7" 
+  }, 
+  "dependencies": { 
+    "terraform": "1.10.5", 
+    "source-map-support": "^0.5.21" 
+  } 
+}

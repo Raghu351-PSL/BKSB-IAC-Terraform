@@ -1,0 +1,17 @@
+{ 
+  "pipelineName": "ExamplePipeline", 
+  "steps": [ 
+    { 
+      "name": "Setup Environment", 
+      "action": "Install dependencies and initialize Terraform" 
+    }, 
+    { 
+      "name": "Plan Changes", 
+      "action": "Run `terraform plan` to preview changes" 
+    }, 
+    { 
+      "name": "Apply Changes", 
+      "action": "Execute `terraform apply` to deploy the infrastructure" 
+    } 
+  ] 
+} 
