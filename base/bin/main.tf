@@ -32,7 +32,8 @@ module "kms" {
   } 
 } 
 module "conditional_resources" { 
-  source                = "../modules/conditional-resources" 
+  source                = "../modules/conditional-resources"
+  Instance_profile_name = var.Instance_Profile_Name
   bucket_name           = var.bucket_name 
   enable_bucket         = var.enable_bucket 
   enable_null_resource  = var.enable_null_resource 
